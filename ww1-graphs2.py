@@ -44,7 +44,8 @@ dframe = dframe.rename(columns={0:'countries',
                               5:'civisIndirectDead',
                               6:'TotDeaths',
                               7:'DeadPop%',
-                              8:'miliWounded'})
+                              8:'miliWounded'
+                               })
 dframe = dframe.transpose()
 
 power_frame = dframe[[21,14,8,24,12,19,26,27]]
@@ -60,7 +61,8 @@ power_frame['countries'] = ['USA',
                            'France',
                            'Russia',
                            'Germany',
-                           'Ottoman']
+                           'Ottoman'
+                           ]
 
 civi_frame = power_frame.transpose()
 civi_frame = civi_frame[[21,26,14,8,12,24,19,27]]
@@ -91,26 +93,25 @@ civi_graph = sb.factorplot(x ='civisDead',
                            aspect=1.5,
                            kind="bar",
                            alpha=0.7,
-                           palette="Reds")
+                           palette="Reds"
+                          )
 
 plt.title("WWI Civilian Casualties",
           fontsize=40,
           fontweight='heavy')
 
-civi_graph.set_ylabels("Countries",
-                       fontweight='bold')
+civi_graph.set_ylabels("Countries", fontweight='bold')
 
-civi_graph.set_xlabels("Civillian Deaths (in millions)",
-                       fontweight='bold')
+civi_graph.set_xlabels("Civillian Deaths (in millions)", fontweight='bold')
 
 plt.yticks(rotation=17)
 
 plt.ticklabel_format(style='sci', 
                      axis='x', 
-                     scilimits=(0,1))
+                     scilimits=(0,1)
+                    )
 
-sb.despine(left=True, 
-           bottom=True)
+sb.despine(left=True, bottom=True)
 
 # Military graph
 mili_graph = sb.factorplot(x='dead/MIA',
@@ -120,26 +121,28 @@ mili_graph = sb.factorplot(x='dead/MIA',
                            aspect=1.5, 
                            kind="bar",
                            palette="Blues",
-                           alpha=0.7)
+                           alpha=0.7
+                          )
 
 plt.title("WWI Military Casualties",
           fontsize=40,
-          fontweight="heavy")
+          fontweight="heavy"
+         )
 
-mili_graph.set_ylabels("Countries",
-                       fontweight="bold")
+mili_graph.set_ylabels("Countries", fontweight="bold")
 
 mili_graph.set_xlabels("Military Deaths (in Millions)",
-                       fontweight="bold")
+                       fontweight="bold"
+                      )
 
 plt.yticks(rotation=16)
 
 plt.ticklabel_format(style='sci', 
                      axis='x', 
-                     scilimits=(0,5))
+                     scilimits=(0,5)
+                    )
 
-sb.despine(left=True, 
-           bottom=True)
+sb.despine(left=True, bottom=True)
 
 civi_graph.savefig("civi-graph2.png")
 mili_graph.savefig("mili-graph2.png")
