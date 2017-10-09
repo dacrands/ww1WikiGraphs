@@ -5,7 +5,9 @@ of the military and civilian casualties for select nations.
 
 ## Background
 I am a history buff, so I wanted to apply Python's data science libraries to visualize some simple WW1 data.
-Wikipedia presents a very nice table of the war's casualties that can be scraped incredibly easy using Pandas: 
+Wikipedia presents a very nice table of the war's casualties, so I figured I'd start there.
+
+This is how I used Pandas to grab the data: 
 
 ```
 url = 'https://en.wikipedia.org/wiki/World_War_I_casualties'
