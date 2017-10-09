@@ -35,7 +35,7 @@ It's that easy! Getting the data to have the indices and data types you'd like, 
 the data for every country, which while interesting, is beyond the scope of this little project.
 
 ### Organizing the data
-To get the countries you'd like, pass their indices:
+I created a new data frame by passing the indices of the countries I wanted (view the data frame to see indices):
 ```
 power_frame = dframe[[21,14,8,24,12,19,26,27]]
 ```
