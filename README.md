@@ -52,5 +52,5 @@ The data from the table came in a strange string (e.g, ```56,639[18] to 64,996 [
 2,254,369[51]```) when I wanted integers, so for simplicity I grabbed the lesser of the two values (i.e., ```56,639``` instead of ```64,996```).
 I created a function for this purpose, the heart which is this mess:
 ```
-newList.append(int(re.compile(r'\d{2,}').search(i.replace(',','')).group()))
+int(re.compile(r'\d{2,}').search(i.replace(',','')).group())
 ```
