@@ -15,3 +15,4 @@ ww1_data = pd.read_html(url)
 dframe = DataFrame(ww1_data[0])
 ```
 
+It's that easy! Getting the data to have the indices and data types you'd like is a bit more difficult.
