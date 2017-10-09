@@ -14,6 +14,14 @@ Along with Python 3+, you will need the following libraries for this script:
 * pandas
 * re
 
+### Use of regex
+The data from the table came in a strange string (e.g, ```56,639[18] to 64,996 [9]```, ```1,700,000[33] to
+2,254,369[51]```) when I wanted integers, so I needed some regex magic.
+I created a function to grab the lower estimates (i.e., ```56,639``` instead of ```64,996```), the heart of which is this mess:
+```
+int(re.compile(r'\d{2,}').search(i.replace(',','')).group())
+```
+
 ### Getting the Data
 This is how I used Pandas to grab the data: 
 
@@ -47,10 +55,4 @@ power_frame['countries'] = [
 ```
 
 
-### Use of regex
-The data from the table came in a strange string (e.g, ```56,639[18] to 64,996 [9]```, ```1,700,000[33] to
-2,254,369[51]```) when I wanted integers, so I needed some regex magic.
-I created a function to grab the lower estimates (i.e., ```56,639``` instead of ```64,996```), the heart of which is this mess:
-```
-int(re.compile(r'\d{2,}').search(i.replace(',','')).group())
-```
+
