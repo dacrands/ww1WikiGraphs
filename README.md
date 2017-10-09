@@ -24,7 +24,7 @@ dframe = DataFrame(ww1_data[0])
 ```
 
 It's that easy! Getting the data to have the indices and data types you'd like, however, is a bit more difficult. Note this will give you
-the data for every country, which while interesting, was beyond the scope of this little project.
+the data for every country, which while interesting, is beyond the scope of this little project.
 
 ### Organizing the data
 To get the countries you'd like, pass their indices:
