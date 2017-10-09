@@ -34,12 +34,14 @@ power_frame = dframe[[21,14,8,24,12,19,26,27]]
 
 ...then rename them:
 ```
-power_frame['countries'] = ['USA',
-                           'Italy',
-                           'UK',
-                           'Aus-Hung',
-                           'France',
-                           'Russia',
-                           'Germany',
-                           'Ottoman']
+power_frame['countries'] = [
+                      'USA',
+                      'Italy',
+                      'UK',
+                      'Aus-Hung',
+                      'France',
+                      'Russia',
+                      'Germany',
+                      'Ottoman'
+                       ]
 ```
