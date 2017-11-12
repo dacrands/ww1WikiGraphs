@@ -31,7 +31,7 @@ url = 'https://en.wikipedia.org/wiki/World_War_I_casualties'
 ww1_data = pd.read_html(url)
 dframe = DataFrame(ww1_data[0])
 ```
-In the code I pass the URL directly to ```read_html()``` since there was only one (See how I handle multiple urls over at my [BigMenGraphs](https://github.com/dacrands/BigMenGraphs) repo), though this may not be best practice (I will investigate!).
+In the code I pass the URL directly to ```read_html()``` since there was only one (See how I handle multiple urls over in [this](https://github.com/dacrands/BigMenGraphs/blob/master/basketball_ref_data.py) .py file located in my BigMenGraphs repo), though this may not be best practice (I will investigate!).
 Note this will give you the data for all of the WWI beligerents, which while interesting, is beyond the scope of this little project.
 
 ### Organizing the data
