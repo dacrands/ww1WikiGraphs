@@ -14,6 +14,7 @@ Along with Python 3+, you will need the following libraries for this script:
 * pandas
 * re
 
+## Data Cleaning and Organization
 ### Use of regex
 The data from the table came in a strange string (e.g, ```56,639[18] to 64,996 [9]```, ```1,700,000[33] to
 2,254,369[51]```) when I wanted integers, so I needed some regex magic.
@@ -30,9 +31,8 @@ url = 'https://en.wikipedia.org/wiki/World_War_I_casualties'
 ww1_data = pd.read_html(url)
 dframe = DataFrame(ww1_data[0])
 ```
-
-It's that easy! Getting the data to have the indices and data types you'd like, however, is a bit more difficult. Note this will give you
-the data for every country, which while interesting, is beyond the scope of this little project.
+In the code I pass the URL directly to ```read_html()``` since there was only one (See how I handle multiple urls over at my [BigMenGraphs](https://github.com/dacrands/BigMenGraphs) repo), though this may not be best practice (I will investigate!).
+Note this will give you the data for all of the WWI beligerents, which while interesting, is beyond the scope of this little project.
 
 ### Organizing the data
 I created a new data frame by passing the indices of the countries I wanted (view the data frame to see indices):
