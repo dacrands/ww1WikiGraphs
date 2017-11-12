@@ -14,6 +14,9 @@ Along with Python 3+, you will need the following libraries for this script:
 * pandas
 * re
 
+### Source
+From the Wikipedia article:
+  >This article lists the casualties of the belligerent powers based on official published sources.
 ## Data Cleaning and Organization
 ### Use of Regular Expressions
 The data from the table came in a strange string (e.g, ```56,639[18] to 64,996 [9]```, ```1,700,000[33] to
