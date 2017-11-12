@@ -45,7 +45,7 @@ I created a new data frame by passing the indices of the countries I wanted (vie
 power_frame = dframe[[21,14,8,24,12,19,26,27]]
 ```
 
-This may have come across as tedious, though given the eight countries of interest where dispersed among 30 others within the dataframe and that I wanted the values in ascending order, it was easiest to transpose the dframe and pass the oredered nation indices directly.
+This may have come across as tedious, though given the eight countries of interest where dispersed among 30 others within the dataframe and that I wanted the values in ascending order, it was easiest to transpose the dframe and pass the ordered nation indices directly.
 
 ...then rename them:
 ```
