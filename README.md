@@ -27,7 +27,7 @@ I created a function to grab the lower estimates (i.e., ```56,639``` instead of 
 ```
 int(re.compile(r'\d{2,}').search(i.replace(',','')).group())
 ```
-Actually, for a regex statement this isn't too bad. First we are matching strings that contain two or more digits. Second, for every string that matches the compile statement, we'll remove the commas that indicate place value. Finally, we are left with integers to be fed to matplotlib for visualization.
+Actually, for a regex statement this isn't too bad. First, we are matching strings that contain two or more digits. Second, for every string that matches the compile statement, we'll remove the commas that indicate place value. Finally, we are left with integers to be fed to matplotlib for visualization.
 ### Getting the Data
 This is how I used Pandas to grab the data: 
 
