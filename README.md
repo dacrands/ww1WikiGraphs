@@ -2,7 +2,7 @@
 
 Uses the data from [this wikipedia page](https://en.wikipedia.org/wiki/World_War_I_casualties) to create histograms 
 of the military and civilian casualties for select belligerents.
-
+![miliGraph](https://github.com/dacrands/ww1WikiGraphs/blob/master/mili-graph.png)
 ## Background
 I am a history buff, so I wanted to apply Python's data science libraries to visualize some WWI data.
 Wikipedia presents a very nice table of the war's casualties, so I figured I'd start there.
