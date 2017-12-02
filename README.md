@@ -2,7 +2,7 @@
 
 Uses the data from [this wikipedia page](https://en.wikipedia.org/wiki/World_War_I_casualties) to create histograms 
 of the military and civilian casualties for select belligerents.
-<hr>
+
 ![miliGraph](https://github.com/dacrands/ww1WikiGraphs/blob/master/mili-graph.png)
 
 ## Background
