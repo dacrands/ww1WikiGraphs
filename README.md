@@ -1,6 +1,6 @@
 # WWI Wiki Graphs
 
-Uses the data from [this wikipedia page](https://en.wikipedia.org/wiki/World_War_I_casualties) to create histograms 
+Uses the data from [this wikipedia page](https://en.wikipedia.org/wiki/World_War_I_casualties) to create bar-plots 
 of the military and civilian casualties for select belligerents.
 
 ![miliGraph](https://github.com/dacrands/ww1WikiGraphs/blob/master/mili-graph.png)
